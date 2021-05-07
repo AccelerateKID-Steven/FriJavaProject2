@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 
 public class main_class {
 
-	private JFrame frame;
+	private JFrame frmMovies;
 
 	/**
 	 * Launch the application.
@@ -16,7 +16,7 @@ public class main_class {
 			public void run() {
 				try {
 					main_class window = new main_class();
-					window.frame.setVisible(true);
+					window.frmMovies.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -35,9 +35,11 @@ public class main_class {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmMovies = new JFrame();
+		frmMovies.setResizable(false);
+		frmMovies.setTitle("movies");
+		frmMovies.setBounds(100, 100, 599, 364);
+		frmMovies.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }
